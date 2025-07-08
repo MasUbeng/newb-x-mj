@@ -75,7 +75,9 @@ vec4 nlWater(
   float opacity = 1.0-cosR;
 
   color.rgb *= 0.22*NL_WATER_TINT*(1.0-0.8*fresnel);
-  color.a = mix(COLOR.a*NL_WATER_TRANSPARENCY, 1.0, opacity*opacity);
+  //color.a = mix(COLOR.a*NL_WATER_TRANSPARENCY, 1.0, opacity*opacity);
+    color.a = COLOR.a*NL_WATER_TRANSPARENCY;
+      color.a += (1.0-color.a)*opacity*opacity;
 
   #ifdef NL_WATER_WAVE
     if (camDist < 14.0) {
