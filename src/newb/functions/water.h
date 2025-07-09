@@ -28,9 +28,9 @@ vec4 nlWater(
     } else { // slanted plane and highly slanted plane
     }*/
   } else { // reflection for side plane
-    bump *= 0.5 + 0.5*sin(3.0*t*NL_WATER_WAVE_SPEED + cPos.y*NL_CONST_PI_HALF);
+    /*bump *= 0.5 + 0.5*sin(3.0*t*NL_WATER_WAVE_SPEED + cPos.y*NL_CONST_PI_HALF);
     nrm.xz = normalize(viewDir.xz) + bump.y*(1.0-viewDir.xz*viewDir.xz)*NL_WATER_BUMP;
-    nrm.y = bump.x*NL_WATER_BUMP;
+    nrm.y = bump.x*NL_WATER_BUMP;*/
   }
   nrm = normalize(nrm);
 

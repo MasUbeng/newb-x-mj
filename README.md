@@ -1,14 +1,29 @@
 # Newb X MJ
 
-**Newb X MJ** is a Newb X Legacy variant based. It is an enhanced vanilla shader that focuses on being lightweight and having soft aesthetics. It supports Minecraft Bedrock 1.21+ (Windows/Android/iOS).
+**Newb X MJ** is a Newb X Legacy variant based. a shader from two worlds: visual beauty and the needs of Minecraft Bedrock builders who want *stand out* screenshots.
+Made especially for those of you who often showcase buildings, whether modern, rustic, or fantasy.
+support 1.21+ (currently android only).
 
 <br>
 
 ![Screenshots](docs/screenshots.jpg "Newb X Legacy 15.47, MCBE 1.21.0")
 
+## Feature
+
+* 🔆 **Bright & Balanced Lighting**
+ Suitable for dark areas without fading, so that every detail of the building is still clearly visible.
+* 🌫️ **Soft Shadow Blur**
+ Not harsh hard shadows, but a aesthetic-style soft blur effect - aesthetic feel instantly.
+* 🌄 **Vibrant Sky Colors**
+ From daylight to dusk, the atmosphere makes your environment auto-cinematic.
+* ☁️ **Complementary Java Style Clouds**
+ Soft, layered clouds, similar to the Complementary shader in Minecraft Java. Neat, thick, and aesthetic.
+* 🎯 **Showcase Optimization**
+ All effects are designed to be suitable for **documentation, thumbnails and building showcases**. This shader not fit for survival (maybe? each person taste is different) - it's for showing off your hard work.
+
 ## Downloads
 
-You can download the shader pack from [release page](https://github.com/devendrn/newb-x-mcbe/releases/latest).
+Download only on [Newb Discord](https://discord.com/channels/844591537430069279/1234463988423721030).
 
 ## Installation
 

@@ -101,9 +101,9 @@
 
 /* Water */
 #define NL_WATER_TRANSPARENCY 0.67 // 0.0 transparent ~ 1.0 normal
-#define NL_WATER_BUMP 0.0        // 0.001 plain ~ 0.2 bumpy water
+#define NL_WATER_BUMP 0.1        // 0.001 plain ~ 0.2 bumpy water
 #define NL_WATER_WAVE_SPEED  0.9  // 0.2 calm ~ 2.0 turbulent
-#define NL_WATER_TEX_OPACITY 1.7  // 0.0 plain water ~ 1.0 vanilla water texture
+#define NL_WATER_TEX_OPACITY 1.74  // 0.0 plain water ~ 1.0 vanilla water texture
 #define NL_WATER_WAVE             // [toggle] wave effect
 //#define NL_WATER_CLOUD_REFLECTION // [toggle] simple clouds/aurora reflection
 //#define NL_WATER_REFL_MASK      // [toggle] fake water reflection mask
@@ -223,8 +223,8 @@
 
 /* Lava effects */
 #define NL_LAVA_NOISE            // [toggle] darken lava in certain regions
-#define NL_LAVA_NOISE_BUMP 0.2 // [toggle] 0.1 subtle ~ 0.8 massive waves
-#define NL_LAVA_NOISE_SPEED 0.02 // 0.0 still ~ 0.1 fast
+#define NL_LAVA_NOISE_BUMP 0.5 // [toggle] 0.1 subtle ~ 0.8 massive waves
+#define NL_LAVA_NOISE_SPEED 0.06 // 0.0 still ~ 0.1 fast
 
 /*
   NEWB SHADER SUBPACK CONFIG
