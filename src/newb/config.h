@@ -44,8 +44,7 @@
 #define NL_SHADOW_INTENSITY 0.9 // 0.0 no shadow ~ 1.0 strong shadow
 #define NL_BLINKING_TORCH     // [toggle] flickering light
 //#define NL_CLOUD_SHADOW       // [toggle] cloud shadow (simple clouds only)
-//#define PhysicallyBasedRendering
-#define AmbientOcclusion 1 // 1:On, 0:Off
+#define MJFakeNormal
 
 /* Sun/moon light color on terrain */
 #define NL_MORNING_SUN_COL vec3(1.0,0.45,0.14)
@@ -63,7 +62,7 @@
 #define NL_END_TORCH_COL        vec3(0.60, 0.00, 1.00)
 
 /* Fog */
-#define NL_FOG 0.2                // [toggle] 0.1 subtle ~ 1.0 blend with sky completely
+//#define NL_FOG 0.2                // [toggle] 0.1 subtle ~ 1.0 blend with sky completely
 #define NL_MIST_DENSITY 0.0      // 0.0 no mist ~ 1.0 misty
 #define NL_RAIN_MIST_OPACITY 0.5 // [toggle] 0.04 very subtle ~ 0.5 thick rain mist blow
 //#define NL_CLOUDY_FOG 0.0         // [toggle] 0.0 subtle - 0.8 dense fog clouds
@@ -101,10 +100,10 @@
 
 /* Water */
 #define NL_WATER_TRANSPARENCY 0.67 // 0.0 transparent ~ 1.0 normal
-#define NL_WATER_BUMP 0.1        // 0.001 plain ~ 0.2 bumpy water
+#define NL_WATER_BUMP 0.00        // 0.001 plain ~ 0.2 bumpy water
 #define NL_WATER_WAVE_SPEED  0.9  // 0.2 calm ~ 2.0 turbulent
 #define NL_WATER_TEX_OPACITY 1.74  // 0.0 plain water ~ 1.0 vanilla water texture
-#define NL_WATER_WAVE             // [toggle] wave effect
+//#define NL_WATER_WAVE             // [toggle] wave effect
 //#define NL_WATER_CLOUD_REFLECTION // [toggle] simple clouds/aurora reflection
 //#define NL_WATER_REFL_MASK      // [toggle] fake water reflection mask
 #define NL_WATER_TINT vec3(0.44, 0.96, 0.87) //old mj vec3(0.914,0.929,0.961), new (0.2,0.9,0.78)
@@ -115,6 +114,7 @@
 #define NL_UNDERWATER_WAVE 0.1               // [toggle] 0.02 subtle ~ 0.6 trippy
 #define NL_UNDERWATER_STREAKS 1.0            // [toggle] 0.8 subtle - 2.0 bright streaks from top
 #define NL_UNDERWATER_TINT vec3(0.9,1.0,0.9) // fog tint color when underwater
+#define MJFakeCaustic
 
 /* Cloud type */
 #define NL_CLOUD_TYPE 2 // 0:vanilla, 1:soft, 2:rounded, 3:realistic
@@ -211,6 +211,7 @@
 #define NL_GROUND_RAIN_WETNESS 1.0 // 0.0 no wetness ~ 1.0 fully wet blocks when raining
 #define NL_GROUND_RAIN_PUDDLES 1.3 // 0.0 no puddles ~ 1.0 puddles
 //#define NL_GROUND_AURORA_REFL    // [toggle] aurora reflection on ground
+#define NL_WATER_CLOUD_AURORA_REFLECTION
 
 /* Entity (Actor, ItemInHand) */
 #define NL_ENTITY_BRIGHTNESS     0.65 // 0.1 dark ~ 1.6 bright

@@ -28,9 +28,9 @@ vec4 nlWater(
     } else { // slanted plane and highly slanted plane
     }*/
   } else { // reflection for side plane
-    /*bump *= 0.5 + 0.5*sin(3.0*t*NL_WATER_WAVE_SPEED + cPos.y*NL_CONST_PI_HALF);
+    bump *= 0.5 + 0.5*sin(3.0*t*NL_WATER_WAVE_SPEED + cPos.y*NL_CONST_PI_HALF);
     nrm.xz = normalize(viewDir.xz) + bump.y*(1.0-viewDir.xz*viewDir.xz)*NL_WATER_BUMP;
-    nrm.y = bump.x*NL_WATER_BUMP;*/
+    nrm.y = bump.x*NL_WATER_BUMP;
   }
   nrm = normalize(nrm);
 
@@ -52,7 +52,11 @@ vec4 nlWater(
       #if NL_CLOUD_TYPE == 1
         vec4 clouds = renderCloudsSimple(skycol, cloudPos.xyy, t, env.rainFactor);
         waterRefl = mix(waterRefl, clouds.rgb, clouds.a*fade);
-      #endif
+        #elif NL_CLOUD_TYPE == 2
+  //vec2 projectedPos = wPos.xz/10.0;
+  vec4 clouds = renderClouds(wPos, cloudPos.xyy, env.rainFactor, t, FOG_COLOR, skycol.horizonEdge);
+  waterRefl = mix(waterRefl, 2.0*clouds.rgb, clouds.a);
+#endif
     }
   #endif
 
@@ -85,7 +89,7 @@ vec4 nlWater(
     }
   #endif
 
-  return vec4(waterRefl, fresnel);
+  return vec4(waterRefl*0.34, fresnel);
 }
 
 #endif
